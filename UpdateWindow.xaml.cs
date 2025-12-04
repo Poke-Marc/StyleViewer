@@ -48,7 +48,7 @@ namespace StyleViewerApp
             {
                 Process.Start(new ProcessStartInfo
                 {
-                    FileName = "https://github.com/Poke-Marc/StyleViewerApp", // Your Link
+                    FileName = "https://github.com/Poke-Marc/StyleViewer", // Your Link
                     UseShellExecute = true
                 });
             }
