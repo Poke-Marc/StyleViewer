@@ -235,7 +235,7 @@
                                 <Separator Margin="0,15"/>
                                 <TextBlock Text="See also" Foreground="#333" FontWeight="Bold" Margin="0,0,0,5"/>
                                 <TextBlock Text="Display" Foreground="#0066CC" Margin="10,0,0,5" Cursor="Hand"/>
-                                <Button Click="BtnSettings_Click" Margin="0,30,0,0" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" Cursor="Hand">
+                                <Button Click="BtnSettings_Click" Margin="0,30,0,0" Background="Transparent" BorderThickness="1" HorizontalAlignment="Left" Cursor="Hand">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="⚙" Foreground="#555" Margin="0,0,5,0"/>
                                         <TextBlock Text="App Settings" Foreground="#555"/>
@@ -346,23 +346,7 @@
         BorderThickness="0" 
         Cursor="Hand"
         Click="BtnBack_Click">
-
-                            <!-- This StackPanel puts the Image and Text side-by-side -->
-                            <StackPanel Orientation="Horizontal">
-
-                                <!-- THE IMAGE -->
-                                <Image Source="/Assets/Images/back_arrow.png" 
-               Width="16" 
-               Height="16" 
-               Margin="0,0,8,0" 
-               RenderOptions.BitmapScalingMode="HighQuality"/>
-
-                                <!-- THE TEXT -->
-                                <TextBlock Text="Back to Control Panel" 
-                   VerticalAlignment="Center" 
-                   Foreground="#333" 
-                   FontSize="14"/>
-                            </StackPanel>
+                            <TextBlock Text="← Back to Control Panel"/>
                         </Button>
                         <TextBlock x:Name="TxtThemeTitle" Text="THEME" FontSize="24" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                     </Grid>
@@ -602,10 +586,9 @@
                                 <Button HorizontalAlignment="Left" 
         VerticalAlignment="Center" 
         Height="30" 
-        Background="lime" 
         BorderThickness="1" 
         Cursor="Hand"
-        Click="BtnUpdate_Click">
+        Click="BtnUpdate_Click" Foreground="Lime">
 
                                     <!-- This StackPanel puts the Image and Text side-by-side -->
                                     <StackPanel Orientation="Horizontal">
